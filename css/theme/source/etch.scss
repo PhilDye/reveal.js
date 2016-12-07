@@ -1,0 +1,38 @@
+/**
+ * Etch theme for reveal.js.
+ *
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #1b1b1b;
+
+$mainFont: 'Proxima Nova', sans-serif;
+$linkColor: #bd1c75;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFont: 'Proxima Nova', sans-serif;
+$headingFontWeight: 700;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #e02c8f;
+$mainFontSize: 30px;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+html .slide-background.present {
+    opacity: 0.2 !important;
+}
